@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style type="text/css">
+            body,html {
+                width:300px; height:325px;overflow:hidden;
+                font-family:"Segoe UI","Roboto","Helvetica","Verdana","Arial",sans-serif;
+                font-size: 1em;
+            }
+            ul {
+                padding:0;
+                margin:0;
+                list-style: none;
+                width:80%;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            ul li {
+                padding:0;
+                margin:0;
+                display:block;
+                line-height: 3em;
+            }
+            label {
+                font-weight: bold;
+                display:block;
+            }
+            .extBtn {
+                font-weight:bold;
+                padding:4px 16px;
+                text-align: center;
+                background-color:#888;
+                color:#FFF;
+                text-decoration:none;
+                border:1px solid #666;
+                border-radius:2px;
+            }
+            .extBtn:hover {
+                background-color:#999;
+            }
+            select {
+                width:50%;
+                padding:4px;
+            }
+            h3 {
+                margin:0;
+                padding:0;
+            }
+        </style>
+        <title>Settings</title>
+        <script src="/res/jquery-3.2.1.min.js"></script>
+        <script src="/res/settings.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <label>Country</label>
+                <select id="cpcountry">
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </li>
+            <li>
+                <label>Competition check</label>
+                <select id="cpcheck">
+                    <option value="title">Match Title</option>
+                    <option value="upc">Match UPC</option>
+                </select>
+            </li>
+            <li>
+                <label>VERO Check</label>
+                <select id="cpvero">
+                    <option value="on">On</option>
+                    <option value="off">Off</option>
+                </select>
+            </li>
+            <li><a href="#" class="extBtn" id="extSavebtn">Save</a></li>
+            <li><span id="statusmsg"></span></li>
+        </ul>
+    </body>
+</html>
